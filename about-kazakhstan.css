@@ -1,0 +1,330 @@
+.corner-pattern {
+    position: absolute;
+    top: 39px;
+    left: 129px;
+    width: 243px;
+    height: 243px;
+    z-index: 1000;
+}
+
+.corner-pattern img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 133px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb .arrow {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.breadcrumb .current {
+    font-weight: 500;
+    color: #888888; /* светло-серый, можно поменять на другой оттенок */
+}
+
+.page-title {
+    position: absolute;
+    top: 205px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+}
+
+.main-text {
+    position: absolute;
+    top: 300px; /* Было 260px */
+    left: 145px;
+    width: calc(100% - 290px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.6;
+}
+
+
+.main-text p {
+    margin: 0;
+}
+
+.main-text p.tight {
+    margin-top: 0;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 20px 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.main-image {
+    position: absolute;
+    top: 820px;
+    left: 145px;
+    width: calc(100% - 290px);
+    height: 619px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-image:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-image:active img {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.second-text {
+    position: absolute;
+    top: 1450px; /* Примерное значение — можно подкорректировать */
+    left: 145px;
+    width: calc(100% - 290px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.third-text {
+    position: absolute;
+    top: 1850px; /* Было 1900px */
+    left: 145px;
+    width: calc(100% - 290px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.second-image {
+    position: absolute;
+    top: 2080px;
+    left: 145px;
+    width: calc(100% - 290px);
+    height: 619px;
+}
+
+.second-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.second-image:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.second-image:active img {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.almaty-text {
+    position: absolute;
+    top: 2720px; /* отрегулируй при необходимости */
+    left: 145px;
+    width: calc(100% - 290px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.almaty-image {
+    position: absolute;
+    top: 3050px; /* Примерное значение — можно подстроить по макету */
+    left: 145px;
+    width: calc(100% - 290px);
+    height: 619px;
+}
+
+.almaty-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.almaty-image:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.almaty-image:active img {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.shymkent-text {
+    position: absolute;
+    top: 3700px; /* Примерное значение — подкорректируй при необходимости */
+    left: 145px;
+    width: calc(100% - 290px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.shymkent-image {
+    position: absolute;
+    top: 4220px; /* актуальная позиция */
+    left: 145px;
+    width: calc(100% - 290px);
+    height: 619px;
+}
+
+.shymkent-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shymkent-image:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shymkent-image:active img {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.final-text {
+    position: absolute;
+    top: 4900px; /* подкорректируй при необходимости */
+    left: 145px;
+    width: calc(100% - 290px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.final-text ul.highlighted-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.final-text ul.highlighted-list li {
+    margin-bottom: 15px;
+    padding-left: 0;
+    font-size: 25px;
+}
+
+.next-text-link {
+    position: absolute;
+    left: 1186px;
+    top: 6200px; /* Было 6140px — опустили чуть ниже */
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.next-text-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-spacing {
+    height: 200px; /* можешь сделать больше или меньше */
+}
+
+body {
+    padding-bottom: 150px; /* создаёт пустое пространство внизу */
+    position: relative;
+}
+
+.yellow-decor {
+    position: absolute;
+    top: 0;
+    left: 1146px;
+    width: 77px;
+    height: 6222px;
+    z-index: 0; /* позади всего */
+    pointer-events: none; /* чтобы не мешал кликам */
+}
+
+.yellow-decor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+

@@ -1,0 +1,253 @@
+body {
+    padding-bottom: 150px;
+    position: relative;
+    margin: 0;
+    background-color: #fff;
+  }
+  
+  /* Узор в углу */
+  .corner-pattern {
+    position: absolute;
+    top: 39px;
+    left: 129px;
+    width: 243px;
+    height: 243px;
+    z-index: 1000;
+  }
+  
+  .corner-pattern img,
+  .yellow-decor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Вертикальный декор справа */
+  .yellow-decor {
+    position: absolute;
+    top: 0;
+    left: 1146px;
+    width: 77px;
+    height: 2400px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  /* Хлебные крошки */
+  .breadcrumb {
+    position: absolute;
+    top: 133px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    white-space: nowrap;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .breadcrumb .arrow {
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  .breadcrumb .current {
+    font-weight: 500;
+    color: #888888;
+  }
+  
+  /* Заголовок страницы */
+  .page-title {
+    position: absolute;
+    top: 205px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Основной текст */
+  .bank-description {
+    position: absolute;
+    top: 355px;
+    left: 105px;
+    width: 1251px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .bottom-spacing {
+    height: 200px;
+  }
+
+  .bank-grid {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 500px;
+  }
+  
+  .bank-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .bank-logo-wrapper {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Индивидуальные размеры логотипов */
+  .halyk-logo {
+    width: 122px;
+    height: 105px;
+    object-fit: contain;
+  }
+  
+  .bcc-logo {
+    width: 220px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .kaspi-logo {
+    width: 200px;
+    height: 170px;
+    object-fit: contain;
+  }
+  
+  .jusan-logo {
+    width: 84px;
+    height: 76px;
+    object-fit: contain;
+  }
+  
+  .freedom-logo {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .eurasian-logo {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  /* Текст в карточке */
+  .bank-text h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .bank-text p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Ссылки */
+  .bank-text a {
+    color: #1A73E8;
+    text-decoration: none;
+  }
+  
+  .bank-text a:hover {
+    text-decoration: underline;
+  }
+
+  .bank-extra-info {
+    position: absolute;
+    top: 1400px; /* адаптируй под длину .bank-grid */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .bank-extra-info h3 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .bank-extra-info p {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  
+  .nav-prev {
+    position: absolute;
+    top: 1800px; /* или чуть выше/ниже по макету */
+    left: 195px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.nav-next {
+    position: absolute;
+    top: 1800px;
+    right: 180px; /* теперь она точно не уйдёт за предел */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.nav-prev:hover,
+.nav-next:hover {
+    text-decoration: underline;
+}
+
+.arrow {
+    font-size: 22px;
+}

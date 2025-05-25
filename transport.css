@@ -1,0 +1,573 @@
+body {
+    padding-bottom: 150px;
+    position: relative;
+    margin: 0;
+    background-color: #fff;
+}
+
+.corner-pattern {
+    position: absolute;
+    top: 39px;
+    left: 129px;
+    width: 243px;
+    height: 243px;
+    z-index: 1000;
+}
+
+.corner-pattern img,
+.yellow-transport-decor img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yellow-transport-decor {
+    position: absolute;
+    top: 0;
+    left: 1146px;
+    width: 100px;
+    height: 11100px; /* подстрой по наполнению */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 133px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb .arrow {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.breadcrumb .current {
+    font-weight: 500;
+    color: #888888;
+}
+
+.page-title {
+    position: absolute;
+    top: 205px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+}
+
+.transport-description {
+    position: absolute;
+    top: 300px; /* было 355px */
+    left: 105px;
+    width: 1251px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+.transport-subtitle {
+    position: absolute;
+    top: 400px; /* было 510px */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.transport-icon {
+    width: 32px;  /* можно изменить по вкусу */
+    height: 32px;
+}
+
+
+.bottom-spacing {
+    height: 200px;
+}
+
+.airastana-section {
+    position: absolute;
+    top: 580px;
+    left: 120px;
+    width: 1250px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  
+  .airastana-header {
+    display: flex;
+    align-items: center; /* выравнивание по центру по вертикали */
+    gap: 20px; /* расстояние между текстом и логотипом */
+    margin-bottom: 25px;
+  }
+  
+  .airastana-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .airastana-logo {
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .airastana-info {
+    padding-left: 30px; /* немного правее текст */
+  }
+  
+  .airastana-info h3 {
+    font-size: 30px;
+    color: #1A1A1A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .airastana-info a {
+    color: #1A73E8;
+    text-decoration: none;
+  }
+  .airastana-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .airastana-gallery {
+    position: absolute;
+    top: 2300px; /* отрегулируй при необходимости */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.airastana-gallery img {
+    width: 255px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.scat-section {
+    position: absolute;
+    top: 2650px; /* отрегулируй при необходимости */
+    left: 120px;
+    width: 1250px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.scat-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.scat-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.scat-logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+.scat-info {
+    padding-left: 30px;
+}
+
+.scat-info h3 {
+    font-size: 30px;
+    color: #1A1A1A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.scat-info a {
+    color: #1A73E8;
+    text-decoration: none;
+}
+
+.scat-info a:hover {
+    text-decoration: underline;
+}
+
+.scat-gallery {
+    position: absolute;
+    top: 4350px; /* подстрой в зависимости от контента */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.scat-gallery img {
+    width: 255px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.qazaq-section {
+    position: absolute;
+    top: 4650px; /* настрой при необходимости */
+    left: 120px;
+    width: 1250px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.qazaq-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.qazaq-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.qazaq-logo {
+    height: 50px;
+    object-fit: contain;
+}
+
+.qazaq-info {
+    padding-left: 30px;
+}
+
+.qazaq-info h3 {
+    font-size: 30px;
+    color: #1A1A1A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.qazaq-info a {
+    color: #1A73E8;
+    text-decoration: none;
+}
+
+.qazaq-info a:hover {
+    text-decoration: underline;
+}
+
+.qazaq-gallery {
+    position: absolute;
+    top: 6000px; /* подстрой в зависимости от контента выше */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.qazaq-gallery img {
+    width: 255px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.train-subtitle {
+    position: absolute;
+    top: 6300px; /* ориентируйся по предыдущим блокам */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .train-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .train-section {
+    position: absolute;
+    top: 6400px;
+    left: 120px;
+    width: 1250px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  
+  .train-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .train-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .train-logo {
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .train-info {
+    padding-left: 30px;
+  }
+  
+  .train-info h3 {
+    font-size: 30px;
+    color: #1A1A1A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .train-info a {
+    color: #1A73E8;
+    text-decoration: none;
+  }
+  .train-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .publictransport-subtitle {
+    position: absolute;
+    top: 8200px; /* ориентируйся по предыдущим блокам */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .publictransport-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .publictransport-section {
+    position: absolute;
+    top: 8300px; /* измени при необходимости */
+    left: 120px;
+    width: 1250px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  
+  .publictransport-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  
+  .publictransport-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .publictransport-info {
+    padding-left: 30px;
+  }
+  
+  .publictransport-info h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .publictransport-info ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .publictransport-info li {
+    margin-bottom: 8px;
+  }
+  
+  .taxi-subtitle {
+    position: absolute;
+    top: 9600px;/* адаптируй при необходимости */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .taxi-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .taxi-section {
+    position: absolute;
+    top: 9700px; /* адаптируй, если ниже/выше */
+    left: 120px;
+    width: 1250px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  
+  .taxi-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  
+  .taxi-logo {
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .taxi-info {
+    padding-left: 30px;
+  }
+  
+  .taxi-info h3 {
+    font-size: 30px;
+    color: #1A1A1A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .taxi-app {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .taxi-app img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .taxi-app h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .taxi-info a {
+    color: #000409;
+    text-decoration: none;
+  }
+  
+  .taxi-info a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-prev {
+    position: absolute;
+    top: 11000px; /* или чуть выше/ниже по макету */
+    left: 195px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.nav-next {
+    position: absolute;
+    top: 11000px;
+    right: 180px; /* теперь она точно не уйдёт за предел */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.nav-prev:hover,
+.nav-next:hover {
+    text-decoration: underline;
+}
+
+.arrow {
+    font-size: 22px;
+}
+
+  

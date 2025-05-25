@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in Kazakhstan</title>
+    <link rel="stylesheet" href="styles-eng.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index-eng.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Regions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="astana-eng.html">Astana</a></li>
+                        <li><a href="almaty-eng.html">Almaty</a></li>
+                        <li><a href="akmola-eng.html">Kokshetau</a></li>
+                        <li><a href="shymkent-turkistan-eng.html">Turkistan & Shymkent</a></li>
+                        <li><a href="semei-eng.html">Semey</a></li>
+                        <li><a href="qyzylorda-eng.html">Kyzylorda</a></li>
+                        <li><a href="aktau-eng.html">Aktau</a></li>
+                        <li><a href="taraz-eng.html">Taraz</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Info for Tourists</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about-kazakhstan-eng.html">About Kazakhstan</a></li>
+                        <li><a href="currency-eng.html">Currency Rate</a></li>
+                        <li><a href="weather-eng.html">Weather Forecast</a></li>
+                        <li><a href="transport-eng.html">Transport Types</a></li>
+                        <li><a href="bank-eng.html">Bank Branches</a></li>
+                        <li><a href="passport-eng.html">Foreign Embassies</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Language</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index-kazakh.html">Kazakh</a></li>
+                        <li><a href="index.html">Russian</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>BAITEREK (ASTANA)</h1>
+            <p>The symbol of Astana — a 97-meter tower offering a panoramic view of the city.</p>
+            <button class="scroll-down">Learn More</button>
+        </div>
+        <div class="carousel">
+            <div class="carousel-container">
+                <img src="images/astanamosque.jpg" alt="" class="carousel-item">
+                <img src="images/kolsaylake.jpg" alt="" class="carousel-item">
+                <img src="images/shymbulakwinter.jpg" alt="" class="carousel-item">
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <div class="destinations-content">
+            <h3>ASTANA</h3>
+            <h2>Top Places in Astana</h2>
+            <p>Immerse yourself in the capital's spirit — from modern icons like Bayterek and the Grand Mosque to cultural and historical sites.</p>
+            <div class="destinations-buttons">
+                <button class="prev-dest">&#10094;</button>
+                <button class="details-btn">More Details</button>
+            </div>
+        </div>
+        <div class="destinations-carousel">
+            <div class="destinations-thumbnails">
+                <a href="detail-nuralem-eng.html"><img src="images/expo.jpg" alt="EXPO" /></a>
+                <a href="detail-hanshatyr-eng.html"><img src="images/khanshatyr.jpg" alt="Khan Shatyr" /></a>
+                <a href="detail-mosque-eng.html"><img src="images/astanamosque.jpg" alt="Main Mosque" /></a>
+                <a href="detail-museum-eng.html"><img src="images/museum.jpg" alt="National Museum" /></a>
+                <a href="detail-baiterek-eng.html"><img class="highlighted" src="images/bayterek-night.jpg" alt="Bayterek" /></a>
+            </div>
+            <button class="next-dest">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="seasons">
+        <div class="seasons-content">
+            <h2>4 SEASONS</h2>
+            <p>Winter in Kazakhstan offers snowy landscapes, active winter sports, and cozy traditions. Resorts like Shymbulak in Almaty, Ak-Bulak, Tabagan, and Nurtau in Ust-Kamenogorsk attract skiers and snowboarders. Medeu skating rink, at 1691m above sea level, lets you skate among snow-covered mountains. Adventurers can enjoy ice fishing on Lake Balkhash or the Caspian Sea, and snowmobile safaris in the steppe. You can also ride dog or reindeer sleds and enjoy nature. After activities, relax in the hot springs of Chundzha or Rakhmanov Keys. Winter is also festive season: Kazakhstan celebrates Nauryz Kyshy, Christmas, and New Year with lights, fairs, and mountain ice festivals.</p>
+        </div>
+        <button class="prev-season">&#10094;</button>
+        <button class="next-season">&#10095;</button>
+    </section>
+
+    <section class="map-section">
+        <h2>Map of Attractions</h2>
+        <div class="map-controls">
+            <input type="text" id="search-input" placeholder="Search for attractions..." />
+            <div class="filter-buttons">
+                <button data-region="all">All</button>
+                <button data-region="Astana">Astana</button>
+                <button data-region="Almaty">Almaty</button>
+                <button data-region="Kokshetau">Kokshetau</button>
+                <button data-region="Shymkent and Turkistan">Shymkent and Turkistan</button>
+                <button data-region="Semey">Semey</button>
+                <button data-region="Kyzylorda">Kyzylorda</button>
+                <button data-region="Aktau">Aktau</button>
+                <button data-region="Taraz">Taraz</button>
+            </div>
+
+            <div class="category-dropdown">
+                <label for="category-select">Categories</label>
+                <select id="category-select">
+                    <option value="All">All</option>
+                    <option value="Modern Attractions">Modern Attractions</option>
+                    <option value="Cultural and Religious Sites">Cultural and Religious Sites</option>
+                    <option value="Shopping Malls">Shopping Malls</option>
+                    <option value="Ski Resorts">Ski Resorts</option>
+                    <option value="Natural Attractions">Natural Attractions</option>
+                    <option value="Historical Sites">Historical Sites</option>
+                    <option value="Architectural Monuments">Architectural Monuments</option>
+                </select>
+            </div>
+
+            <div class="travel-mode-container">
+                <select id="travel-mode">
+                    <option value="DRIVING">🚗 Taxi</option>
+                    <option value="WALKING">🚶 On foot</option>
+                    <option value="TRANSIT">🚌 Bus</option>
+                </select>
+                <select id="bus-selector">
+                    <option value="">Select Bus</option>
+                    <option value="bus50">Bus #50</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="position: relative;">
+            <div id="map" style="width: 100%; height: 600px;"></div>
+            <div id="route-info" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.8); padding: 10px 20px; border-radius: 10px; font-weight: bold; font-size: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 10; color: #333;">Route Information</div>
+            <button id="locate-me" style="position: absolute; bottom: 20px; right: 20px; z-index: 5; background: #E9A400; color: white; border: none; padding: 10px 16px; border-radius: 8px; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.3); cursor: pointer; transition: background 0.3s ease;">📍 My Location</button>
+        </div>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB28M9KUM_D_kp1FBacck2EEk38e5V3jAI&libraries=geometry&callback=initMap" async defer></script>
+    <script src="script-eng.js"></script>
+</body>
+</html>

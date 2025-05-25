@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding-bottom: 150px;
+  background-color: #fff;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Верхний узор */
+.corner-pattern {
+  position: absolute;
+  top: 39px;
+  left: 129px;
+  width: 243px;
+  height: 243px;
+  z-index: 1000;
+}
+.corner-pattern img,
+.yellow-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Вертикальный узор */
+.yellow-decor {
+  position: absolute;
+  top: 0;
+  left: 1146px;
+  width: 77px;
+  height: 4700px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Хлебные крошки */
+.breadcrumb {
+  position: absolute;
+  top: 133px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  white-space: nowrap;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+.breadcrumb .arrow {
+  font-weight: bold;
+  margin: 0 5px;
+}
+.breadcrumb .current {
+  font-weight: 500;
+  color: #888;
+}
+
+/* Заголовок */
+.page-title {
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+
+/* Основной текст */
+.passport-description {
+  position: absolute;
+  top: 355px;
+  left: 105px;
+  width: 1251px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.embassy-section {
+  position: absolute;
+  top: 600px; /* можешь регулировать это значение */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  background-color: #e6e4e4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.embassy-section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.embassy-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.embassy-table th,
+.embassy-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  text-align: left;
+  color: #333;
+}
+
+.embassy-table th {
+  background-color: #ececec;
+  font-weight: 600;
+}
+
+.nav-prev {
+  position: absolute;
+  top: 4665px; /* или чуть выше/ниже по макету */
+  left: 195px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 1000;
+}
+
+
+.nav-prev:hover,
+.nav-next:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  font-size: 22px;
+}
+
+ 

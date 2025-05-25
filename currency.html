@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="corner-pattern">
+        <img src="images/corner-pattern.png" alt="Узор">
+    </div>
+    
+    <div class="yellow-decor">
+        <img src="images/yellow.png" alt="Декор">
+    </div>
+
+    <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span class="arrow">&gt;</span>
+        <span class="current">Курс валют</span>
+    </div>
+
+    <h1 class="page-title">Валюта и финансовые расчёты в Казахстане</h1>
+
+    <div class="currency-text">
+        <p>Официальной валютой Казахстана является тенге (KZT).</p>
+        <p>Многие туристы из России задаются вопросом, можно ли расплачиваться рублями. Однако все расчёты на территории Казахстана официально производятся только в тенге.</p>
+        <p>💱 <strong>Где обменять валюту?</strong><br>
+            Российские рубли, доллары США, евро и другие основные валюты можно обменять в банках и официальных обменных пунктах.
+        </p>
+        <p>🏧 <strong>Банковские карты и банкоматы</strong><br>
+            Во всех торговых центрах, отелях, ресторанах и крупных магазинах принимаются банковские карты.
+        </p>
+        <p>🔎 <strong>Ввоз и вывоз наличных</strong><br>
+            При ввозе или вывозе суммы свыше 10 000 USD нужно заполнить декларацию.
+        </p>
+        <p><em>Совет:</em> Уточните курс заранее и пользуйтесь официальными пунктами обмена.</p>
+    </div>
+
+    <div class="currency-images">
+        <div class="row">
+            <img src="images/money-500.png" alt="500 тенге">
+            <img src="images/money-1000.png" alt="1000 тенге">
+        </div>
+        <div class="row">
+            <img src="images/money-2000.png" alt="2000 тенге">
+            <img src="images/money-5000.png" alt="5000 тенге">
+        </div>
+        <div class="row">
+            <img src="images/money-10000.png" alt="10000 тенге">
+            <img src="images/money-20000.png" alt="20000 тенге">
+        </div>
+    </div>
+
+    <div class="exchange-box">
+        <div class="exchange-row">
+            <div class="currency-label">USD</div>
+            <div class="currency-label">EUR</div>
+            <div class="currency-label">RUB</div>
+            <div class="currency-label">KGS</div>
+            <div class="currency-label">CNY</div>
+        </div>
+        <div class="exchange-row" id="currency-values">
+            <div class="currency-value">—</div>
+            <div class="currency-value">—</div>
+            <div class="currency-value">—</div>
+            <div class="currency-value">—</div>
+            <div class="currency-value">—</div>
+        </div>
+    </div>
+
+    <p class="info-description">
+        Дополнительную информацию можете посмотреть на официальном сайте Народного Банка РК
+    </p>
+    <img src="images/nb-logo.png" alt="Логотип Народного Банка" class="nb-logo">
+    <a href="https://nationalbank.kz/ru/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut" 
+       class="nb-link" target="_blank">
+       Национальный Банк Республики Казахстан
+    </a>
+
+    <a href="about-kazakhstan.html" class="nav-prev">
+        <span class="arrow">&lt;</span> Предыдущая
+    </a>
+  
+    <a href="weather.html" class="nav-next">
+        Следующая <span class="arrow">&gt;</span>
+    </a>
+
+    <div class="bottom-spacing"></div>
+
+    <script src="currency.js"></script>
+</body>
+</html>

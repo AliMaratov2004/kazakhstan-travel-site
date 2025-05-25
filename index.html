@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туризм в Казахстане</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Главная</a>
+            </li>
+      
+            <li class="dropdown">
+              <a href="#">Регионы</a>
+              <ul class="dropdown-content">
+                <li><a href="astana.html">Астана</a></li>
+                <li><a href="almaty.html">Алматы</a></li>
+                <li><a href="akmola.html">Кокшетау</a></li>
+                <li><a href="shymkent-turkistan.html">Туркестан и Шымкент</a></li>
+                <li><a href="semei.html">Семей</a></li>
+                <li><a href="qyzylorda.html">Кызылорда</a></li>
+                <li><a href="aktau.html">Актау</a></li>
+                <li><a href="taraz.html">Тараз</a></li>
+              </ul>
+            </li>
+      
+            <li class="dropdown">
+              <a href="#">Информация для туриста</a>
+              <ul class="dropdown-content">
+                <li><a href="about-kazakhstan.html">О Казахстане</a></li>
+                <li><a href="currency.html">Курс валют</a></li>
+                <li><a href="weather.html">Погода</a></li>
+                <li><a href="transport.html">Транспортные средства</a></li>
+                <li><a href="bank.html">Банковские отделы</a></li>
+                <li><a href="passport.html">Посольства стран</a></li>
+              </ul>
+            </li>
+      
+            <li class="dropdown">
+              <a href="#">Выбор языка</a>
+              <ul class="dropdown-content">
+                <li><a href="index-kazakh.html">Қазақ тілі</a></li>
+                <li><a href="index.html">Русский язык</a></li>
+                <li><a href="index-eng.html">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>БАЙТЕРЕК (АСТАНА)</h1>
+            <p>Символ столицы, 97-метровая башня с панорамным видом на город.</p>
+            <button class="scroll-down">Узнать больше</button>
+        </div>
+        
+        <div class="carousel">
+            <div class="carousel-container">
+                <img src="images/astanamosque.jpg" alt="" class="carousel-item">
+                <img src="images/kolsaylake.jpg" alt="" class="carousel-item">
+                <img src="images/shymbulakwinter.jpg" alt="" class="carousel-item">
+            </div>
+        </div>
+        
+        <div class="carousel-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="destinations">
+      <div class="destinations-content">
+        <h3>АСТАНА</h3>
+        <h2>Лучшие места Столицы</h2>
+        <p>Погрузитесь в атмосферу столицы Казахстана: от грандиозных современных символов, таких как Байтерек и Главная Мечеть, до исторических мест.</p>
+    
+        <div class="destinations-buttons">
+          <button class="prev-dest">&#10094;</button>
+          <a id="dest-details-btn" class="details-btn" href="astana.html">Подробнее</a>
+
+        </div>
+      </div>
+    
+      <div class="destinations-carousel">
+        <div class="destinations-thumbnails">
+          <a href="detail-nuralem.html"><img src="images/expo.jpg" alt="EXPO" /></a>
+          <a href="detail-hanshatyr.html"><img src="images/khanshatyr.jpg" alt="Хан Шатыр" /></a>
+          <a href="detail-mosque.html"><img src="images/astanamosque.jpg" alt="Главная мечеть" /></a>
+          <a href="detail-museum.html"><img src="images/museum.jpg" alt="Национальный музей" /></a>
+          <a href="detail-baiterek.html"><img class="highlighted" src="images/bayterek-night.jpg" alt="Байтерек" /></a>
+        </div>
+        <button class="next-dest">&#10095;</button>
+      </div>
+    </section>
+    
+
+    <section class="seasons">
+        <div class="seasons-content">
+            <h2>4 СЕЗОНА</h2>
+            <p>Зима в Казахстане — время снежных пейзажей, зимних видов спорта и теплых традиций. Горнолыжные курорты, такие как Шымбулак в Алматы, Ак-Булак, Табаган и Нуртау в Усть-Каменогорске, привлекают любителей лыж и сноуборда. Каток Медео предлагает незабываемые катания на коньках среди величественных гор.</p>
+        </div>
+        <button class="prev-season">&#10094;</button>
+        <button class="next-season">&#10095;</button>
+    </section>
+    
+    <section class="map-section">
+      <h2>Карта достопримечательностей</h2>
+      
+      <div class="map-controls">
+        <!-- Поиск -->
+        <input type="text" id="search-input" placeholder="Поиск по достопримечательностям..." />
+    
+        <!-- Кнопки регионов -->
+        <div class="filter-buttons">
+          <button data-region="all">Все</button>
+          <button data-region="Астана">Астана</button>
+          <button data-region="Алматы">Алматы</button>
+          <button data-region="Кокшетау">Кокшетау</button>
+          <button data-region="Шымкент и Туркистан">Шымкент и Туркистан</button>
+          <button data-region="Семей">Семей</button>
+          <button data-region="Кызылорда">Кызылорда</button>
+          <button data-region="Актау">Актау</button>
+          <button data-region="Тараз">Тараз</button>
+        </div>
+    
+        <!-- Выпадающий список категорий -->
+        <div class="category-dropdown">
+          <label for="category-select">Категории</label>
+          <select id="category-select">
+            <option value="Все">Все</option>
+            <option value="Современные достопримечательности">Современные достопримечательности</option>
+            <option value="Культурные и религиозные места">Культурные и религиозные места</option>
+            <option value="ТРЦ">ТРЦ</option>
+            <option value="Горнолыжные курорты">Горнолыжные курорты</option>
+            <option value="Природные достопримечательности">Природные достопримечательности</option>
+            <option value="Исторические достопримечательности">Исторические достопримечательности</option>
+            <option value="Архитектурные памятники">Архитектурные памятники</option>
+          </select>
+        </div>
+        
+    
+        <!-- Способы передвижения -->
+        <div class="travel-mode-container">
+          <select id="travel-mode">
+            <option value="DRIVING">🚗 Такси</option>
+            <option value="WALKING">🚶 Пешком</option>
+            <option value="TRANSIT">🚌 Автобус</option>
+          </select>
+        
+          <select id="bus-selector">
+            <option value="">Выбрать автобус</option>
+            <option value="bus50">Автобус №50</option>
+          </select>
+        </div>
+      </div>
+    
+      <!-- Карта -->
+      <div style="position: relative;">
+        <div id="map" style="width: 100%; height: 600px;"></div>
+        <div id="route-info" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.8); padding: 10px 20px; border-radius: 10px; font-weight: bold; font-size: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 10; color: #333;">Информация о маршруте</div>
+        
+        <!-- Кнопка геолокации -->
+        <button id="locate-me" style="position: absolute; bottom: 20px; right: 20px; z-index: 5; background: #E9A400; color: white; border: none; padding: 10px 16px; border-radius: 8px; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.3); cursor: pointer; transition: background 0.3s ease;">📍 Моё местоположение</button>
+      </div>
+
+      <div class="manual-route-inputs" style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+        <input type="text" id="from-input" placeholder="Откуда" class="route-input" />
+        <input type="text" id="to-input" placeholder="Куда" class="route-input" />
+        <button id="build-route-btn" class="build-btn">🚗 Построить</button>
+      </div>
+      
+    </section>
+    
+    <!-- Подключение Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB28M9KUM_D_kp1FBacck2EEk38e5V3jAI&libraries=geometry&callback=initMap" async defer></script>
+    
+    <script src="script.js"></script>
+
+    
+    
+</body>
+</html>
